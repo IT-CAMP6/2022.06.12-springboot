@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">
+    <input type="text" placeholder="imie" th:field="*{clinet.name}">
+    <input type="text" placeholder="nazwisko" th:field="*{clinet.surname}">
+    <input type="text" placeholder="login" th:field="*{clinet.login}">
+    <input type="password" placeholder="haslo" th:field="*{clinet.password}">
+    <input type="password" placeholder="powtorz haslo" th:field="*{clinet.password2}">
+    <input type="text" placeholder="ulica" th:field="*{clinet.street}">
+    <input type="text" placeholder="kod pcztowy" th:field="*{clinet.postalCode}">
+    <input type="text" placeholder="miasto" th:field="*{clinet.city}">
+    <input type="text" placeholder="wiek" th:field="*{clinet.age}">
+    <input type="text" placeholder="telefon" th:field="*{clinet.phone}">
+    <input type="submit" value="OK">
+</form>
+</body>
+</html>
